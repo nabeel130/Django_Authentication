@@ -2,7 +2,7 @@
 
 {% block content %}
 <h2>Homepage</h2>
-<p>welcome to y site, {{ user.username }}!!</p>
+<p>welcome to y site, {%  if user.is_authenticated %} {{ user.username }} {% else %}vistor!! {% endif %} !!</p>
 <p><strong>Total users Registered : </strong> {{ count }}</p>
 
 {% endblock %}
