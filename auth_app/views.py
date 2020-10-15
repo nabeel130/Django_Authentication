@@ -8,7 +8,7 @@ def home(request):
     context = {
         'count' : count
     }
-    return render(request, 'auth_app/home.html' , context)
+    return render(request, 'registration/home.html' , context)
 
 def signUp(request):
     if request.method == 'POST':
@@ -22,6 +22,6 @@ def signUp(request):
     context = {
         'form' : form
     }
-    return render(request, 'auth_app/signup.html' , context)
+    return render(request, 'registration/signup.html' , context)
     
     
